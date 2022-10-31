@@ -182,6 +182,5 @@ gsap.to('#about', {
     pin: true,
     toggleActions: 'play reverse play complete',
     toggleClass: {targets: '#about', className: "classActive"},
-    onLeave: () => $("html").animate({scrollTop: philosophyTop}),
   },
 });
