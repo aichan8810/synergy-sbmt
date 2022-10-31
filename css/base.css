@@ -1,0 +1,15 @@
+:root{
+  --pc-maquree: 180px;
+  --section-title: 40px;
+  --mv-title: 30px;
+  --pc-heading: 28px;
+  --menu-font: 24px;
+  --pc-mid-exp: 18px;
+  --pc-explain: 16px;
+  --base-section-padding: 100px 0;
+  --base-title-margin: 60px;
+  --base-exp-margin: 50px;
+  --pc-base-width: 1183.13px;
+  --pc-base-inner: 1000px;
+  --exp-line-height: 1.875;
+}
