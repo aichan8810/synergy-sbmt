@@ -11,8 +11,12 @@ new Splide( '.splide', {
   breakpoints: {
 		767: {
 			perPage: 1,
+      fixedHeight: 370,
+		},
+		500: {
+			perPage: 1,
       fixedHeight: 320,
-      padding: 80,
+      fixedWidth: '95%',
 		}
   },
 
@@ -53,4 +57,16 @@ $(function () {
   });
 });
 
-
+const top_btn = document.querySelector('.to-top');
+top_btn.addEventListener('click', function(){
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+});
+document.querySelector('.logo').addEventListener('click', function(){
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+});
