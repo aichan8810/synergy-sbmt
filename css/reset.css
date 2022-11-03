@@ -99,6 +99,14 @@ html {
 .onlyPC{
   display: block;
 }
+.onlythou{
+  display: none;
+}
+@media(max-width: 1000px){
+  .onlythou{
+    display: block;
+  }
+}
 @media(max-width: 767px){
   .onlyPC{
     display: none;

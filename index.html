@@ -7,14 +7,14 @@
   <title>Document</title>
   <!-- CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/keen-slider@5.5.1/keen-slider.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.3/dist/css/splide.min.css">
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/style.css">
 
   <!-- JS -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="https://cdn.jsdelivr.net/npm/keen-slider@latest/keen-slider.js"></script>
 
-
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.3/dist/js/splide.min.js"></script>
   <!-- Scrolltrigger -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js" integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js" integrity="sha512-tHvUcUQYi35zApvAa5TNR3fNhBQkVtkmWKfacnpxmix4/VTGz1lGjIVyLMp7gLgAvg+aKJjnVKokXJNS5GZ+/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -32,6 +32,13 @@
           </div>
         </div>
         <ul class="hamburger-content">
+          <div class="hamburger-inner">
+            <span class="hum-text">CLOSE</span>
+            <div class="hamburger">
+              <span id="line1"></span>
+              <span id="line2"></span>
+            </div>
+          </div>
           <li class="menu-title">MENU</li>
           <li class="content"><a href="#about">ABOUT SYNERGY</a></li>
           <li class="content"><a href="#philosophy">PHILOSOPHY</a></li>
@@ -48,11 +55,28 @@
 
       <div class="text-area">
         <h1 class="mv-title">
-          「今やっている<br class="onlySP">ビジネスが全てなのか？ 」<br>あなたの<br class="onlySP">『P e r s o n a l i t y』を<br>『G r o w t h 』させる<br class="onlySP">ビジネスマッチングで、<br>理想のライフスタイルを<br class="onlySP">S Y N E R G Y S E R V I C Eが<br class="onlySP">叶えます。
+          「今やっている<br class="onlythou">ビジネスが全てなのか？ 」<br>あなたの<br class="onlythou">『P e r s o n a l i t y』を<br>『G r o w t h 』させる<br class="onlythou">ビジネスマッチングで、<br>理想のライフスタイルを<br class="onlythou">SYNERGY SERVICEが<br class="onlythou">叶えます。
         </h1>
         <p class="mv-exp">
           フリーランスや個人事業主、専業ワーカー、会社員をしながら副業をされている方など、<br>働き方は様々である中で、今の収入や仕事に満足をしていますか？<br><br>また、あなたの人生やライフスタイルは満足してますか？<br>ほとんどの方が満足をしてないでしょう。<br><br>人生の3分の1以上が「仕事の時間」であり、充実した人生やライフスタイルを叶えるためにSYNERGY SERVICEがここにあります。<br>年間5,000人が登録しているこのビジネスマッチングサービスで、<br>出会いや繋がりを深め、もっと充実したものにしませんか？
         </p>
+      </div>
+      <div class="banner">
+        <video autoplay playsinline muted loop preload>
+          <source src="./images/video.mp4" />
+        </video>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 285 80" preserveAspectRatio="xMidYMid slice">
+          <defs>
+          <mask id="mask" x="0" y="0" width="100%" height="100%" >
+            <rect x="0" y="0" width="100%" height="100%" />
+<!--           <text x="72"  y="50">
+            SYN<tbreak />SER
+          </text>
+ -->            </mask>
+
+        </defs>
+      <rect x="0" y="0" width="100%" height="100%" />
+        </svg>
       </div>
       <img src="./images/circle1.png" alt="" id="mv-circle">
       <img src="./images/mv-top.png" alt="" id="mv-top">
@@ -62,11 +86,15 @@
     </section>
     <section id="pick-up">
       <h2 class="title">PICK UP<span></span></h2>
-      <div id="my-keen-slider" class="keen-slider">
-        <div class="keen-slider__slide" style="min-width: 540px; max-width: 540px;"><img src="./images/PTFX_banner_v2.png" alt=""></div>
-        <div class="keen-slider__slide"><img src="./images/SPM_banner.png" alt=""></div>
-        <div class="keen-slider__slide">3</div>
+      <div class="splide" aria-label="Splideの基本的なHTML">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide"><img src="./images/PTFX_banner_v2.png" alt=""></li>
+            <li class="splide__slide"><img src="./images/SPM_banner.png" alt=""></li>
+            <li class="splide__slide"><img src="./images/SPM_banner.png" alt=""></li>
+          </ul>
         </div>
+      </div>
     </section>
     <section id="about" class="scroll">
       <h2 class="title color">ABOUT SYNERGY</h2>
@@ -94,6 +122,9 @@
 
     </section>
     <section class="scroll" id="philosophy">
+      <div class="marquees">
+        <marquee>MATCHING COLLABORATION</marquee>
+      </div>
       <h2 class="title color">PHILOSOPHY</h2>
       <div class="section-content">
         <h3 class="content-title">『1＋1＝∞』に繋がる、<br>ビジネスマッチングの<br class="onlySP">コラボレーションを。</h3>
@@ -105,10 +136,6 @@
           ビジネスに答えはありません。<br>だからこそ、ビジネスマンはそれぞれの答えを見つけるために、<br>『タビウド』でないといけません。<br>そして、ビジネスマンとして成長へと繋がっていかなければなりません。<br><br>弊社はビジネスマッチングの総論として、<br>「人と人との最高のコラボレーション」をモットーに、<br>どこよりも質の高いマッチングとパフォーマンスで、<br>マッチングによる無駄を減らすことで相乗効果を生み出し、<br> 一人では辿り着けない世界へと導きます。
         </p>
       </div>
-      <div class="marquees">
-        <marquee class="color">MATCHING COLLABORATION</marquee>
-      </div>
-
       <div class="img-bg">
         <img src="./images/synbol.png" alt="" id="symbol">
       </div>
@@ -154,9 +181,6 @@
         <p class="content-explain">
           シナジーサービスでは理想のライフスタイルを実現させていただけるように紹介者に対してアフィリエイトプログラムを導入しております。<br><br>広い視点を持ち、沢山のビジネスユーザーと繋がり、取捨選択し、自分の理想のライフスタイルを実現させるために是非このシナジーサービスを活用してください。
         </p>
-      </div>
-      <div class="marquees">
-        <marquee>MATCHING COLLABORATION</marquee>
       </div>
       <img src="./images/graph.png" alt="" class="gragh">
       <p class="to-line color">
@@ -229,6 +253,7 @@
         </div>
       </div>
       <hr class="white">
+      <img src="./images/big-arrow.png" alt="" id="big-arrow">
 
       <div class="register-sec">
         <p class="to-line">他のビジネスマンと差別化を図ることができ、<br>ご⾃⾝のブランド⼒を最⼤限に引き出すことができます。<br>また、SYNERGY SERVICEにしかないノウハウを得ることができるので、<br>理想のライフスタイルへの『Gole』に辿り着くことができます。<br>このプラットフォームを是⾮ご活⽤下さい。</p>
@@ -354,9 +379,28 @@
   </footer>
   <script src="//cdn.jsdelivr.net/npm/gsap@3.7.0/dist/gsap.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/gsap@3.7.0/dist/ScrollTrigger.min.js"></script>
-    <!-- Slick -->
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="path/node_modules/keen-slider/keen-slider.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.21/jquery.scrollify.min.js" integrity="sha512-UyX8JsMsNRW1cYl8BoxpcamonpwU2y7mSTsN0Z52plp7oKo1u92Xqfpv6lOlTyH3yiMXK+gU1jw0DVCsPTfKew==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="//unpkg.com/babel-standalone@6.26.0/babel.min.js"></script>
+    <script src="//unpkg.com/d3@4.12.2/build/d3.min.js"></script>
+    <script type="text/babel">
+    const textArray = ["SYN", "SER"]
+    const svg = d3.select("mask");
+
+    svg .append("text")
+      .attr("transform", "translate(100, 31)")
+      .html(rightLinebreak(textArray))
+
+    function rightLinebreak(array){
+      let string = "";
+      const maxTextLength = d3.max(array, d => d.length )
+      array.forEach((t, i) => {
+        let l = maxTextLength - t.length ;
+        string += `<tspan y="${i}em" x="${l}em">${t}</tspan>`;
+      });
+      return string;
+    }
+
+    </script>
 </body>
 <script src="./js/main.js"></script>
 </html>
