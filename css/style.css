@@ -78,6 +78,23 @@ svg > rect {
 section{
   border-bottom: 1px solid #000;
 }
+
+
+#scroll-down{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  height: fit-content;
+  writing-mode: vertical-lr;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  left: 98px;
+  font-size: 10px;
+  line-height: 25px;
+  font-weight: 500;
+}
+
 /* header */
 header{
   display: flex;
@@ -287,6 +304,17 @@ header{
   font-size: var(--mv-title);
   letter-spacing: .075em;
 }
+.mv-title::before{
+  content: 'MESSAGE TO FREELANCE , \A MULTI-WORKERANDSELFEMPLOYEES.';
+  font-size: 10px;
+  display: block;
+  white-space: pre;
+  margin-bottom: 30px;
+  line-height: 14px;
+  font-weight: 400;
+  letter-spacing: .5em;
+
+}
 .mv-exp{
   width: 50%;
   margin-top: 47px;
@@ -423,6 +451,9 @@ header{
 .dot.is-active {
   background-color: #ec821c;
   border-top: 2px solid  #fff;
+  color: white;
+}
+.dots li .dot.is-active::before{
   color: white;
 }
 .arrow {
