@@ -305,7 +305,7 @@ header{
   letter-spacing: .075em;
 }
 .mv-title::before{
-  content: 'MESSAGE TO FREELANCE , \A MULTI-WORKERANDSELFEMPLOYEES.';
+  content: 'Messagetofreelance , \A Multiworkerandselfemployees.';
   font-size: 10px;
   display: block;
   white-space: pre;
@@ -1061,7 +1061,7 @@ header{
   top: 50%;
   right: 25px;
   height: 2px;
-  width: 15px;
+  width: 40px;
   background: #fff;
   transform: rotate(90deg);
   transition: all .3s ease-in-out;
@@ -1072,7 +1072,7 @@ header{
   top: 50%;
   right: 25px;
   height: 2px;
-  width: 15px;
+  width: 40px;
   background: #fff;
   transition: all .3s ease-in-out;
 }

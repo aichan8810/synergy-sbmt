@@ -378,6 +378,12 @@
   .quetion{
     padding-right: 50px;
   }
+  .quetion:before{
+    width: 20px;
+  }
+  .quetion:after{
+    width: 20px;
+  }
   #line-sec .to-line{
     font-size: 18px;
     line-height: 25px;
