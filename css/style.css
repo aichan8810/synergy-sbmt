@@ -438,12 +438,12 @@ header{
   font-size: 18px;
   color: black;
 }
-.dots li:nth-of-type(3) .dot::before{
+/* .dots li:nth-of-type(3) .dot::before{
   content: '03';
   font-size: 18px;
   color: black;
 }
-
+ */
 .dot:focus {
   outline: none;
 }
