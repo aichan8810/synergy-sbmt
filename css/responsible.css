@@ -39,7 +39,7 @@
   /* adviser */
   /* user */
   .bg-video{
-    height: 100%;
+    height: calc(100% + 30px);
     object-fit: cover;
   }
   .flex-category{
@@ -509,6 +509,10 @@
   }
   .img-bg-SP{
     height: fit-content;
+  }
+  .bg-video{
+    right: -30px;
+    width: calc(100vw + 90px);
   }
 }
 @media(max-width: 450px){

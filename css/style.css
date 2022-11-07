@@ -948,16 +948,21 @@ header{
   padding: 100px 0;
   position: relative;
   overflow: hidden;
-
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .bg-video{
   position: absolute;
-  top: 0;
-  bottom: 0;
+  top: -30px;
   left: 0;
   right: 0;
   width: 100%;
+  height: calc(100% + 30px);
+  object-fit: cover;
   z-index: -1;
 }
 #user .title{
@@ -1111,6 +1116,7 @@ header{
 }
 #line-sec .to-line{
   padding: 40px 0 30px;
+  margin-bottom: 0;
 }
 
 #line-sec a{
